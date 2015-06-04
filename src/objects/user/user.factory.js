@@ -1,16 +1,20 @@
 import User from 'objects/user/user.model';
 import UserApi from 'services/api/user.api';
 
+let _users = {};
 
 class UserFactory {
 
     constructor() {
         this.rand = Math.random();
-        this._users = {};
     }
 
     get users() {
-        return this._users;
+        return _users
+    }
+
+    set users(val) {
+        _users = val;
     }
 
     /**
@@ -20,7 +24,7 @@ class UserFactory {
      */
     collect(userArr) {
 
-        let users = this._users;
+        let users = _users;
 
         return userArr.map(function(data) {
 
