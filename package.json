@@ -1,0 +1,33 @@
+{
+  "name": "jspm-es6-example",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "server": "browser-sync start --files 'src/**/*.html,src/**/*.css,src/**/*.js' --server 'src'"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.7.6",
+    "jspm": "^0.15.6"
+  },
+  "jspm": {
+    "directories": {
+      "baseURL": "src"
+    },
+    "dependencies": {
+      "css": "github:systemjs/plugin-css@^0.1.12",
+      "foundation-apps": "npm:foundation-apps@^1.1.0",
+      "json": "github:systemjs/plugin-json@^0.1.0",
+      "promise": "npm:promise@^7.0.1",
+      "superagent": "npm:superagent@^1.2.0",
+      "superagent-promise": "npm:superagent-promise@^1.0.0",
+      "text": "github:systemjs/plugin-text@^0.0.2"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.1.13",
+      "babel-runtime": "npm:babel-runtime@^5.1.13",
+      "core-js": "npm:core-js@^0.9.4"
+    }
+  }
+}
