@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "server": "browser-sync start --files 'src/**/*.html,src/**/*.css,src/**/*.js' --server 'src'"
+    "devServer": "browser-sync start --files 'src/**/*.html,src/**/*.css,src/**/*.js' --server 'src'",
+    "distServer": "browser-sync start --files 'src/**/*.html,src/**/*.css,src/**/*.js' --server 'dist'",
+    "buildMode": "jspm bundle startup --inject build/build.js",
+    "devMode": "jspm unbundle",
+    "dist": "jspm bundle-sfx startup dist/dist.js"
   },
   "author": "",
   "license": "ISC",

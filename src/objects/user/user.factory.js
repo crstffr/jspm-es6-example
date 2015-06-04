@@ -6,7 +6,11 @@ class UserFactory {
 
     constructor() {
         this.rand = Math.random();
-        this.users = {};
+        this._users = {};
+    }
+
+    get users() {
+        return this._users;
     }
 
     /**
@@ -16,7 +20,7 @@ class UserFactory {
      */
     collect(userArr) {
 
-        let users = this.users;
+        let users = this._users;
 
         return userArr.map(function(data) {
 
