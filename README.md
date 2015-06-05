@@ -1,10 +1,10 @@
 # jspm-es6-example
 
-Walkthrough of setup:
+Document followed to create this setup:
 
 [http://developer.telerik.com/featured/choose-es6-modules-today](http://developer.telerik.com/featured/choose-es6-modules-today) 
 
-
+## Usage
 
 Install NPM dependencies
 
@@ -18,11 +18,11 @@ Run browser-sync on source files
 
 `npm run devServer`
 
-Configure server to bundle all dependencies automatically
+Bundle all dependencies automatically, browser-sync & jspm will now load the bundled scripts
 
 `npm run buildMode`
 
-Return configuration to load dependencies individually
+Unbundle all dependencies, browser-sync & jspm will now load all dependencies individually
 
 `npm run devMode`
 
