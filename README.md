@@ -1,5 +1,11 @@
 # jspm-es6-example
 
+Walkthrough of setup:
+
+[http://developer.telerik.com/featured/choose-es6-modules-today](http://developer.telerik.com/featured/choose-es6-modules-today) 
+
+
+
 Install NPM dependencies
 
 `npm install`
